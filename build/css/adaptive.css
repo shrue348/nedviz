@@ -1,0 +1,67 @@
+@media (max-width: 1200px) {
+	.header_tel { font-size: 45px; }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+	.main_menu .main_menu__toggle { display: inline-block; }
+	.main_menu ul { display: none; }
+
+	.header_top > .wrapper > .row > .col-10,
+	.header_top > .wrapper > .row > .col-2 { width: 50%; }
+
+	.main_header { background-position: 0 76px; }
+	.main_header__h { font-size: 45px; }
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.header { height: 530px; }
+	.header_top { margin-bottom: 50px; }
+	.header_top_car__item { height: 530px; }
+	.header_logo__top img { max-width: 370px; }
+	.header_logo__bottom { font-size: 28px; }
+
+	.main_header { background-position: 0 67px; }
+	.main_header__h { font-size: 35px; }
+
+	.sect_block_list { padding: 0 80px; }
+
+	.sect_block.col-3 { width: 50%;  }
+	.sect_block.col-3:nth-child(3n+1) { clear: none; }
+	.sect_block.col-3:nth-child(2n+1) { clear: left; }
+
+	.sect_block { position: relative; }
+	.sect_block.col-3 .sect_block__desc { padding: 30px 10px 10px; background-color: #fff; border: 1px solid #a5a8aa; position: absolute; z-index: 100;  left: 0; top: 0; display: none;}
+	.sect_block.col-3 .sect_block__desc .close { position: absolute; z-index: 2; display: block; width: 12px; height: 12px; top: 10px; right: 10px; background: url(../img/tooltip_close.png) no-repeat scroll center transparent; }
+}
+			 
+@media (max-width: 767px) {
+	
+	
+}
+
+@media (max-width: 680px) {
+	
+}
+
+ 
+@media (max-width: 480px) {
+	
+
+}
+
+@media (max-width: 340px) {
+
+
+}
+
+
+
+
+
+
