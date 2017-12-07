@@ -38,23 +38,24 @@
 					<div class="main_menu">
 						<a href="javascript: ;" class="main_menu__toggle"><i class="icon-menu"></i></a>
 						<ul>
-							<li><a href="">О комплексе</a></li>
-							<li><a href="">Преимущества</a></li>
-							<li><a href="">Инфраструктура</a></li>
-							<li><a href="">Социальная среда</a></li>
-							<li><a href="">Фотогалерея</a></li>
-							<li><a href="">Награды</a></li>
-							<li><a href="">Выбрать квартиру</a></li>
-							<li><a href="">Контакты</a></li>
+							<li><a href="#sect_1">О комплексе</a></li>
+							<li><a href="#sect_2">Преимущества</a></li>
+							<li><a href="#sect_3">Инфраструктура</a></li>
+							<li><a href="#sect_4">Социальная среда</a></li>
+							<li><a href="#sect_5">Фотогалерея</a></li>
+							<li><a href="#sect_6">Награды</a></li>
+							<li><a href="#sect_7">Выбрать квартиру</a></li>
+							<li><a href="#sect_8">Контакты</a></li>
 						</ul>
 					</div>
-					<a href="/">
+					<a class="logo" href="/">
 						<img src="img/logo.png" alt="Cnроительный трест">
 					</a>
 				</div>
 				<div class="col-2 alignright">
 					<div class="header_tel"><a href="tel:+7812-331-2000"></a>331-2000</div>
-					<a class="call" href=""></a>
+
+					<a class="call" href="javascript:;" data-toggle="modal" data-target="#modal_call"></a>
 				</div>
 			</div>
 		</div>
@@ -65,7 +66,7 @@
 		<div class="header_logo__top">
 			<img src="img/brand_logo.png" alt="">
 		</div>
-		<div class="header_logo__bottom">ЛУЧШИЙ НОВЫЙ МИКРОРАЙОН</div>
+		<div class="header_logo__bottom">ЛУЧШИЙ НОВЫЙ <br>МИКРОРАЙОН</div>
 		<a href="" class="header_logo__btn">Показать преимущества</a>
 	</div>
 
@@ -86,14 +87,22 @@
 				</div>
 			</div>
 				
-			<a href="" class="header_promo">
-				
-			</a>
+			<div class="header_promo">
+				<div class="header_promo__cost">
+					<div class="header_promo__cost_line">
+						<div class="header_promo__cost_line-1 up">от</div>
+						<div class="header_promo__cost_line-2">68</div>
+						<div class="header_promo__cost_line-3">000<br><span class="up">руб. за м<sup>2</sup></span></div>
+					</div>
+				</div>
+				<a class="header_promo__more"></a>
+				<a class="header_promo__all"></a>
+			</div>
 		</div>		
 	</div>
 </div>
 
-<div class="main_header">
+<div class="main_header" id="sect_1">
 	<div class="main_header__h">NEWПИТЕР – ЛУЧШИЙ, ПОТОМУ ЧТО:</div>
 </div>
 
@@ -136,7 +145,7 @@
 		</div>
 	</div>
 </div>
-<div class="sect sect_2">
+<div class="sect sect_2" id="sect_2">
 	<div class="sect_content">
 		<div class="wrapper">
 			<div class="row">
@@ -200,7 +209,7 @@
 		</div>
 	</div>
 </div>
-<div class="sect sect_3">
+<div class="sect sect_3" id="sect_3">
 	<div class="sect_content">
 		<div class="wrapper">
 			<div class="row">
@@ -251,7 +260,7 @@
 		</div>
 	</div>
 </div>
-<div class="sect sect_4">
+<div class="sect sect_4" id="sect_4">
 	<div class="sect_content">
 		<div class="wrapper">
 			<div class="row">
@@ -670,6 +679,37 @@
 	</div>
 </div>
 
+
+<div class="modal fade" id="modal_call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Close"></a>
+		<div class="modal-content">
+			<div class="h2 mgb35">Заказать звонок</div>
+
+			<div class="form">
+				<form action="">
+					<div class="mgb20">
+						<input type="text" name="fio" placeholder="Имя">
+					</div>
+					<div class="mgb20">
+						<input type="text" name="phone" placeholder="Телефон">
+					</div>
+					<div class="mgb20">
+						<input type="email" name="email" placeholder="Email">
+					</div>
+					<div class="mgb25 font12">
+						<label>
+							<input type="radio" name="rooms_count">
+							<span class="inline-block"><span>Я согласен на обработку <br>персональных данных</span></span>
+						</label>
+					</div>
+					
+					<button>Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
