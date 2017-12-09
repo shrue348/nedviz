@@ -279,12 +279,12 @@ select {
 
 .form_wrap { border: 1px solid #d7d7d7; background-color: #faf9f9; padding: 17px; box-sizing: border-box; border-radius: 8px; padding: 25px 40px;}
 .form input[type="text"], .form input[type="password"], .form input[type="email"], .form input[type="number"], .form input[type="tel"], .form input[type="url"], .form textarea {
-    padding: 0px 12px; border: 1px solid #bfc1c3;
+    padding: 9px 12px; border: 1px solid #bfc1c3;
     width: 100%; max-width: 100%; box-sizing: border-box;
     background-color: #fff;
     -webkit-appearance: none;
     font-size: 18px;
-    height: 41px; line-height: 43px;
+    
     border-radius: 0;
 }
 
@@ -523,20 +523,12 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 
 
 .calc_block__title { color: #808184; font-size: 20px; }
-
-
-
-
-
 .calc_row { text-align: left; }
 .calc_row_item { background-color: #fff; padding: 15px; border: 1px solid #bebfc1;   }
 .calc_row_item.calc_row_item-red {  border: 1px solid #f1938a;  }
 .calc_row_item__img { display: block; margin: 0 auto 15px; }
 .calc_row_item__prop { font-size: 20px; margin-bottom: 5px; color: #808184;}
 .calc_row_item__prop > span { font-weight: bold; color: #147871; }
-
-
-
 
 .calc_slide { display: flex; justify-content: space-between; align-items: center; position: relative; margin-bottom: 20px;}
 .calc_slide input { width: 100%;  }
@@ -557,6 +549,13 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 .calc_wrap input[type=radio] + span { vertical-align: middle; }
 .calc_wrap input[type=radio] + span:before { content: url(../img/check.png); display: inline-block; vertical-align: middle; margin-right: 7px; }
 .calc_wrap input[type=radio]:checked + span:before { content: url(../img/check_checked.png); }
+
+
+.range { width: 100%; margin: 0 20px; }
+
+
+
+
 
 
 .excursion { background: url(../img/excursion_back.jpg) no-repeat scroll center /cover transparent; text-align: center; position: relative; padding-top: 115px; padding-bottom: 210px; position: relative; z-index: 1; margin-bottom: -160px;}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -12,12 +12,14 @@
 	<link rel="stylesheet" href="css/iconic.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/nouislider.css">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/baguetteBox.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
 
 	<script src="js/ready.js"></script>
 
@@ -442,20 +444,24 @@
 				</div>
 				<div class="row mgb70">
 					<div class="calc_slide">
-						<div class="val"><span></span></div>
+						<div id="range_val" class="val"><span></span></div>
 
 						<div class="calc_slide__left alignright mgr5">35</div>
-						<input type="range" min="35" max="100">
+						<div id="range" class="range"></div>
+						<!-- <input type="range" min="35" max="100"> -->
+
 						<div class="calc_slide__right alignleft mgl5">100</div>
 					</div>
 					<div class="calc_block__title">Выберите количество квадратных метров</div>
 				</div>
 				<div class="row mgb30">
 					<div class="calc_slide">
-						<div class="val"><span></span></div>
+						<div id="range2_val" class="val"><span></span></div>
 
 						<div class="calc_slide__left alignright mgr5">3 млн. руб</div>
-						<input type="range" min="3000000" max="10000000" step="100000">
+						<div id="range2" class="range"></div>
+						<!-- <input type="range" min="3000000" max="10000000" step="100000"> -->
+
 						<div class="calc_slide__right alignleft mgl5">10 млн. руб</div>
 					</div>
 					<div class="calc_block__title">Выберите стоимость квартиры</div>

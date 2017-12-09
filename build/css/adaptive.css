@@ -31,7 +31,7 @@
 	.sect_5 { padding-top: 155px; }
 	.excursion_form .row { margin-left: -15px; margin-right: -15px; }
 
-
+	.icons_list__item:not(:last-child):after { top: 20px;}
 }
 
 
@@ -103,6 +103,12 @@
 
 	.excursion_form .row { margin-left: -15px; margin-right: -15px; }
 	.excursion_form .row .col-6 { padding: 0 15px; }
+
+	.footer_top { text-align: center; margin-bottom: 25px;}
+	.footer_top .col-2.off-1 { width: 100%; margin-left: 0; margin-bottom: 20px;}
+	.footer_top .col-7 { width: 100%; }
+	.footer_top .col-1 { width: 100%; }
+	.footer_top .col-6 { max-width: 300px; width: 300px; float: none; display: block; margin: 0 auto 30px; text-align: left; }
 
 }
 			 
@@ -195,10 +201,21 @@
 	.calc_row.row .col-4 { width: 100%; }
 	.calc_row.row .col-4:not(:last-child) { margin-bottom: 20px;}
 
+	.calc_block { padding: 35px 20px 0; text-align: center; }
+	.ipoteka { position: relative; display: inline-block; margin-bottom: 30px; left: 0; }
+
+	.footer_top { text-align: center; margin-bottom: 25px;}
+	.footer_top .col-2.off-1 { width: 100%; margin-left: 0; margin-bottom: 20px;}
+	.footer_top .col-7 { width: 100%; }
+	.footer_top .col-1 { width: 100%; }
+	.footer_top .col-6 { max-width: 300px; width: 300px; float: none; display: block; margin: 0 auto 30px; text-align: left; }
+
 }
 
 @media (max-width: 680px) {
-	
+	.calc_wrap input[type=radio] + span:before { display: block; margin: 0 auto 5px; }
+	.calc_slide__left, .calc_slide__right { font-size: 13px; -webkit-box-flex: 0; -ms-flex: 0 0 70px; flex: 0 0 70px;}
+
 }
 
  
@@ -233,13 +250,14 @@
 	.sect_block.col-3:nth-child(odd) .sect_block__desc { left: 10px; right: -100px }
 	.sect_block.col-3:nth-child(even) .sect_block__desc { left: -100px; right: 10px }
 
-	.footer_top .col-2.off-1 { width: 100%; margin-left: 0; }
-	.footer_top .col-7 { width: 100%; }
-	.footer_top .col-1 { width: 100%; }
-	.footer_top .col-6 { width: 100%; }
 
 	.business { border-radius: 50% / 70px; }
 
+	.calc_slide__left, .calc_slide__right { position: absolute; top: -30px;}
+	.calc_slide__left { left: 15px; }
+	.calc_slide__right { right: 15px; }
+
+	.business { padding: 90px 0; }
 }
 
 @media (max-width: 340px) {
@@ -252,7 +270,9 @@
 	.call:hover { width: 144px; height: 40px; background-size: 100% auto;  }
 	.header_logo__bottom br { display: inline-block; }
 
-	.business { border-radius: 50% / 40px; }
+	.business { border-radius: 50% / 40px; padding: 50px 0;}
+
+	.calc_wrap input[type=radio] + span { font-size: 13px; }
 
 
 }
