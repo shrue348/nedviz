@@ -421,7 +421,8 @@ p a:hover { text-decoration: none; }
 .header_top_car .slick-dots li > button:before { position: absolute; display: block; width: 15px; height: 15px; left: 0; top: 0; border-radius: 50%; background-color: #fff; pointer-events: all; content: '';}
 .header_top_car .slick-dots li.slick-active > button:before { background-color: #808184;}
 .header_top_car__item { float: left; height: 760px;   }
-
+.header_top_car button.slick-prev { display: none !important; }
+.header_top_car button.slick-next { display: none !important; }
 /*background: url(../img/slide_1.jpg) no-repeat scroll center top / cover transparent; */
 
 
@@ -578,15 +579,9 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 .excursion_form input[name=phone] { background: url(../img/input_phone.png) no-repeat scroll center right transparent; }
 
 
-
 .business { text-align: center; padding: 135px 0 155px; background: url(../img/business_back.png) no-repeat scroll bottom left #fff; position: relative; z-index: 3; border-radius: 50% / 160px;}
 .business .h2 { font-size: 45px; text-transform: uppercase; color: #cf1b10; font-family: "PTSansBold"; background-color: transparent; text-align: center; margin-bottom: 20px;}
 .business_imgs { margin-top: 45px; }
-
-
-.map { height: 700px; background: url(../img/map.jpg) no-repeat scroll center / cover transparent; }
-.map_accordion { position: absolute; z-index: 2; left: 0; top: 130px;  background-color: #fff;}
-
 
 
 .tooltip { padding: 20px 10px 10px; background-color: #fff; border: 1px solid #a5a8aa; position: absolute; z-index: 100; display: none; left: 0; top: 0;}
@@ -600,25 +595,17 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.map { height: 700px; background: url(../img/map.jpg) no-repeat scroll center / cover transparent; }
+.map_accordion { position: absolute; z-index: 2; left:15px; top: 130px;  background-color: #fff;}
+.map_accordion { max-width: 307px; }
+.map_accordion__info { padding: 13px 13px 13px 50px; color: #fff; background: url(../img/alert_i.png) no-repeat scroll 13px center #ef720d; font-size: 11px; }
+.map_accordion .panel-heading a.collapsed { display: block; color: #cf1b10; font-size: 16px; border-bottom: 1px solid #dddedf; padding: 8px; }
+.map_accordion .panel-heading a:before, .map_accordion .panel-heading a:after {  content: " ";  display: table;}
+.map_accordion .panel-heading a:after { clear: both;}
+.map_accordion .panel-heading a:not(.collapsed) { color: #fff; background-color: #127972; display: block; font-size: 16px; border-bottom: 1px solid #dddedf; padding: 8px; }
+.map_accordion .panel-heading a > i { float: right; }
+.map_accordion .panel-heading a > i+i { display: none; }
+.map_accordion .panel-body { padding: 8px; background-color: #e6e6e7; }
 
 
 
@@ -770,7 +757,6 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 #modal_ipoteka.modal .modal-dialog { max-width: 722px; background:url(../img/business_back.png) no-repeat scroll bottom left #fff;}
 #modal_ipoteka.modal .modal-dialog .modal_cup__imgs { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; margin-top: 30px; margin-bottom: 10px; }
 #modal_ipoteka.modal .modal-dialog .modal_cup__imgs img  { margin-bottom: 10px; }
-
 #modal_plan.modal .modal-dialog { max-width: 720px; padding: 45px 15px 15px; background-color: #fff; background-image: none;}
 #modal_plan.modal .modal-dialog:after { content: none; }
 #modal_plan.modal .modal-dialog .btn { font-size: 15px; width: 100%; max-width: 200px; }
