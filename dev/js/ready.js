@@ -167,6 +167,11 @@ $(function(){
 });
 
 
+$(function(){
+	$('.map_accordion .panel-body').mCustomScrollbar();
+})
+
+
 
 function number_format(number, decimals, dec_point, separator ) {
   number = (number + '').replace(/[^0-9+\-Ee.]/g, '');

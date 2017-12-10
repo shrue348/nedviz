@@ -425,7 +425,6 @@ p a:hover { text-decoration: none; }
 .header_top_car button.slick-next { display: none !important; }
 /*background: url(../img/slide_1.jpg) no-repeat scroll center top / cover transparent; */
 
-
 .main_menu { margin-bottom: 24px; }
 .main_menu li { display: inline-block; margin: 0 9px; }
 .main_menu a { color: #fffefe; text-transform: uppercase; display: block; font-size: 13px; line-height: 20px; border-bottom: 1px solid transparent;}
@@ -434,7 +433,6 @@ p a:hover { text-decoration: none; }
 
 a.main_menu__toggle { display: none; font-size: 28px; text-decoration: none;}
 a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
-
 
 
 .main_header { text-align: center; padding: 65px 0 27px; background: url(../img/main_header_back.png) repeat-x scroll 0 83px transparent;}
@@ -597,7 +595,7 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 
 .map { height: 700px; background: url(../img/map.jpg) no-repeat scroll center / cover transparent; }
 .map_accordion { position: absolute; z-index: 2; left:15px; top: 130px;  background-color: #fff;}
-.map_accordion { max-width: 307px; }
+.map_accordion { max-width: 320px; }
 .map_accordion__info { padding: 13px 13px 13px 50px; color: #fff; background: url(../img/alert_i.png) no-repeat scroll 13px center #ef720d; font-size: 11px; }
 .map_accordion .panel-heading a.collapsed { display: block; color: #cf1b10; font-size: 16px; border-bottom: 1px solid #dddedf; padding: 8px; }
 .map_accordion .panel-heading a:before, .map_accordion .panel-heading a:after {  content: " ";  display: table;}
@@ -605,14 +603,16 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 .map_accordion .panel-heading a:not(.collapsed) { color: #fff; background-color: #127972; display: block; font-size: 16px; border-bottom: 1px solid #dddedf; padding: 8px; }
 .map_accordion .panel-heading a > i { float: right; }
 .map_accordion .panel-heading a > i+i { display: none; }
-.map_accordion .panel-body { padding: 8px; background-color: #e6e6e7; }
+.map_accordion .panel-body { padding: 8px; background-color: #e6e6e7; max-height: 250px; overflow-y: scroll; }
+.map_accordion .panel-body:before, .map_accordion .panel-body:after {  content: " ";  display: table;}
+.map_accordion .panel-body:after { clear: both;}
 
 
 
-
-
-
-
+.map_accordion .mark-item_list { float: left;  margin-bottom: 10px; }
+.map_accordion .mark-item_list:nth-child(2n+1) { clear: left; width: 50%; }
+.map_accordion .mark-item_img { display: inline-block; width: 40px; vertical-align: middle; }
+.map_accordion .mark-item_img + span {display: inline-block; width: calc(100% - 47px); font-size: 13px; vertical-align: middle;}
 
 
 
