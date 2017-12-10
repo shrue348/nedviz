@@ -331,20 +331,18 @@ select {
 .txt a { border-bottom: 3px solid #ed1c24; text-transform: uppercase; font-size: 12px; font-family: "RobotoBold"; letter-spacing: 1px;}
 
 .btn {
-    font-size: 20px;
-    border: none;
     display: inline-block;
-    line-height: 38px;
-    height: 38px;
     color: #fff;
-    border-radius: 4px;
-    padding: 0 17px;
-    transition: all 0.2s ease;
-    box-sizing: border-box;
-    background-color: #ee464e;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
     text-align: center;
+    background-color: #cf1b10;
+    width: 170px;
+    height: 64px;
+    line-height: 64px;
 }
-.btn:hover { background-color: #f67177; }
+.btn:hover { background-color: #7d0a10; }
 .btn:active { -webkit-transform: translateY(2px); transform: translateY(2px);}
 .btn.btn_blue { background-color: #5b8db7;}
 .btn.btn_blue:hover { background-color: #6CA7D8;}
@@ -786,6 +784,10 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 #modal_ipoteka.modal .modal-dialog { max-width: 722px; background:url(../img/business_back.png) no-repeat scroll bottom left #fff;}
 #modal_ipoteka.modal .modal-dialog .modal_cup__imgs { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: 30px; margin-bottom: 10px; }
 #modal_ipoteka.modal .modal-dialog .modal_cup__imgs img  { margin-bottom: 10px; }
+
+#modal_plan.modal .modal-dialog { max-width: 720px; padding: 45px 15px 15px; background-color: #fff; background-image: none;}
+#modal_plan.modal .modal-dialog:after { content: none; }
+#modal_plan.modal .modal-dialog .btn { font-size: 15px; width: 100%; max-width: 200px; }
 
 .modal-success { position: absolute; z-index: 3; margin: auto; top: 95px; right: 45px; bottom: 95px; left: 45px; color: #fff; background-color: #cf1b10; box-sizing: border-box; text-align: center; padding: 60px 20px; border: 1px solid #cdcdcd; display: none; }
 

@@ -215,7 +215,9 @@
 @media (max-width: 680px) {
 	.calc_wrap input[type=radio] + span:before { display: block; margin: 0 auto 5px; }
 	.calc_slide__left, .calc_slide__right { font-size: 13px; -webkit-box-flex: 0; -ms-flex: 0 0 70px; flex: 0 0 70px;}
-
+	#modal_plan.modal .modal-dialog .col-5,
+	#modal_plan.modal .modal-dialog .col-4,
+	#modal_plan.modal .modal-dialog .col-3 { width: 100%; }
 }
 
  

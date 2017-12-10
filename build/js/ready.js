@@ -147,7 +147,7 @@ $(function(){
 	});
 
 	noUiSlider.create(range2, {
-		start: [3000000],
+		start: [3000000, 10000000],
 		connect: true,
 		step: 500000,
 		range: {
@@ -157,9 +157,12 @@ $(function(){
 	});
 
 	range2.noUiSlider.on('update', function( values, handle ) {
-		var val = number_format(values[0], 0, ',', ' ');
+		var val1 = number_format(values[0], 0, ',', ' ');
+		var val2 = number_format(values[1], 0, ',', ' ');
 
-		$('#range2_val span').text(val);
+		val1 = val1 + ' - ' + val2;
+
+		$('#range2_val span').text(val1);
 	});
 });
 
