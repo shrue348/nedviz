@@ -171,6 +171,23 @@ $(function(){
 	$('.map_accordion .panel-body').mCustomScrollbar();
 })
 
+$(function(){
+	$("#backtotop").hide(); //Back to top
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 50) {
+			$('#backtotop').fadeIn();
+		} else {
+			$('#backtotop').fadeOut();
+		}
+	});
+	$('#backtotop').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 700);
+		return false;
+	});
+})
+
 
 
 function number_format(number, decimals, dec_point, separator ) {
