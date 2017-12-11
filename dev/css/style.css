@@ -603,9 +603,14 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 .map_accordion .panel-heading a:not(.collapsed) { color: #fff; background-color: #127972; display: block; font-size: 16px; border-bottom: 1px solid #dddedf; padding: 8px; }
 .map_accordion .panel-heading a > i { float: right; }
 .map_accordion .panel-heading a > i+i { display: none; }
-.map_accordion .panel-body { padding: 8px; background-color: #e6e6e7; max-height: 250px; overflow-y: scroll; }
+.map_accordion .panel-body { background-color: #e6e6e7; max-height: 250px; }
+.map_accordion .mCSB_container { padding: 8px; }
 .map_accordion .panel-body:before, .map_accordion .panel-body:after {  content: " ";  display: table;}
 .map_accordion .panel-body:after { clear: both;}
+
+
+.map_accordion .panel-body .mCSB_scrollTools {  }
+.map_accordion .panel-body .mCSB_inside>.mCSB_container { margin-right: 10px; }
 
 
 
@@ -616,8 +621,9 @@ a.main_menu__toggle:hover { border-bottom: 1px solid transparent;}
 
 
 
-
-
+.map_accordion .panel-body .mCSB_scrollTools { background-color: #fff; width: 6px; }
+.map_accordion .panel-body .mCSB_scrollTools .mCSB_draggerRail { background-color: #fff; }
+.map_accordion .panel-body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color: #808184; border-radius: 0; }
 
 
 
