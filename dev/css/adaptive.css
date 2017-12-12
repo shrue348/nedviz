@@ -1,8 +1,8 @@
 @media (max-width: 1200px) {
 	.header_tel { font-size: 45px; }
 
-	.header_top_car:before { content: url(../img/main_slider_left.png); position: absolute; z-index: 2; left: -300px; top: 0; }
-	.header_top_car:after { content: url(../img/main_slider_right.png); position: absolute; z-index: 2; right: -300px; top: 0; }
+	.header_top_car:before { content: url(../img/main_slider_left.png); position: absolute; z-index: 2; left: -300px; top: 0; pointer-events: none;}
+	.header_top_car:after { content: url(../img/main_slider_right.png); position: absolute; z-index: 2; right: -300px; top: 0; pointer-events: none;}
 }
 
 
@@ -213,6 +213,9 @@
 	.footer_top .col-7 { width: 100%; }
 	.footer_top .col-1 { width: 100%; }
 	.footer_top .col-6 { max-width: 300px; width: 300px; float: none; display: block; margin: 0 auto 30px; text-align: left; }
+
+	#modal_plan.modal .modal-dialog .modal-flex { display: block; }
+	#modal_plan.modal .modal-dialog .modal-flex .btn { margin-top: 15px; }
 
 }
 

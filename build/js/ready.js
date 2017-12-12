@@ -47,7 +47,6 @@ $(function(){
 	      breakpoint: 980,
 	      settings: {
 	        arrows: true,
-	        centerMode: true,
 	        slidesToShow: 1
 	      }
 	    },
@@ -55,7 +54,6 @@ $(function(){
 	      breakpoint: 768,
 	      settings: {
 	        arrows: false,
-	        centerMode: true,
 	        slidesToShow: 1
 	      }
 	    }
